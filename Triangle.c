@@ -1,20 +1,23 @@
 #include<stdio.h>
 int main(){
 	int a,b,c;
-	printf("Enter the length of side1 :");
+	
 	scanf("%d",&a);
 	
-	printf("Enter the length of side2 :");
+	
 	scanf("%d",&b);
 	
-	printf("Enter the length of side3 :");
+	
 	scanf("%d",&c);
 	
-	if(a==b && b==c){
-		printf("equilateral.");
+	if ((a+b>c) && (b+c>a) && (c+a>b)){
+		if (a==b && a==c){
+			printf("The triangle is an equilateral triangle.");
+		}
+		else if (a==b || b==c || c==a){
+			printf("The triangle is an isosceles triangle.");
+		}
+		else printf("The triangle is a scalene triangle.");
 	}
-	else if (a==b && b!=c){
-		printf("isosceles");
-	}
-	else printf("scalene");
+	else printf("The lengths do not form a valid triangle.");
 }
