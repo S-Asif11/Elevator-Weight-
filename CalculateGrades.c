@@ -1,12 +1,3 @@
-/*90 to 100: Grade A
-	-> 80 to 89: Grade B
-	-> 70 to 79: Grade C
-	-> 60 to 69: Grade D
-	-> Below 60: Grade F
-*/
-
-
-
 #include<stdio.h>
 
 int main(){
@@ -29,5 +20,5 @@ int main(){
 	else if(num<60){
 		printf("Grade F");
 	}
-	else printf(" ");
+	else printf("Invalid marks entered.");
 }
