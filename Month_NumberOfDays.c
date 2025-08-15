@@ -9,5 +9,8 @@ int main(){
     else if (month==4 || month==6 || month==9 || month==11){
         printf("Number of days: 30");
     }
-    else printf("Number of days: 28");
+    else if (month==2){
+        printf("Number of days: 28");
+
+    }else printf("Invalid month number. Please enter between 1 and 12.");
 }
